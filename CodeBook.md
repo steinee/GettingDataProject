@@ -7,12 +7,11 @@ output: html_document
 
 This codebook contains these sections:
 
-Background
-License
-Analysis
-Feature Descriptions
-Original Feature Selection
-
+* Background
+* License
+* Analysis
+* Feature Descriptions
+* Original Feature Selection
 
 
 Background:
@@ -21,7 +20,7 @@ This file describes the data and processing used in the Course Project for Getti
 The data in this project is sourced from an experiment conducted by conducted by the UCI Machine Learning 
 Laboratory and you can find references to the background and data here:
 
-http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones#
+*** http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones#
 
 The experiment consisted of placing 30 subjects into 6 different "activity" states and sampling the accelerameter
 and gyrosope signals from smartphones attached to their wrists. The raw data underwent considerable processing 
@@ -56,7 +55,7 @@ Analysis:
 
 I was unable to download a clean version of the data set on on my Win 8 box using R, so I downloaded the file
 manually from here:
-# url <- "https://d396qusza40orc.cloudfront.net/getdata-projectfiles-UCI HAR Dataset.zip"
+*** url <- "https://d396qusza40orc.cloudfront.net/getdata-projectfiles-UCI HAR Dataset.zip"
 
 I extracted the data, which has both training and test data spread through multiple levels of subdirectories.
 The accompanying R script assumes the R working directory is at the root of the extracted zip file. The data for both training and test are similar in that there is 1) the actual feature vector of 561 features, 2) identifiers (anonymized) for the 30 subjects and 3) human readable activity labels that correspond to the rows in the set of feature vectors.
@@ -76,12 +75,12 @@ In R, column 1 is integer, column 2 is a factor. All others are numerics.
 
 
 1                              Activity One of 6 possible values:
-                                                  WALKING
-                                                  WALKING_UPSTAIRS
-                                                  WALKING_DOWNSTAIRS
-                                                  SITTING
-                                                  STANDING
-                                                  LAYING
+*                                                  WALKING
+*                                                  WALKING_UPSTAIRS
+*                                                  WALKING_DOWNSTAIRS
+*                                                  SITTING
+*                                                  STANDING
+*                                                  LAYING
 2                               Subject Integer from 1 to 30 identifying a test subject
 
 All of the below featuers are either means or stndard deviations as indicated by the name. Importantly, note that the input data for this project was normalized to the range -1 to 1. That is, all the variables were altered by subtracting thei means to center them around zero and then divided by the range of the data to normalize the range to -1 to 1. Thus, some standard deviations will appear here as negative. This processing was performed to make the data more suitable for machine learning.
