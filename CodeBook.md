@@ -84,6 +84,7 @@ In R, column 1 is integer, column 2 is a factor. All others are numerics.
 2                               Subject Integer from 1 to 30 identifying a test subject
 
 All of the below featuers are either means or stndard deviations as indicated by the name. Importantly, note that the input data for this project was normalized to the range -1 to 1. That is, all the variables were altered by subtracting thei means to center them around zero and then divided by the range of the data to normalize the range to -1 to 1. Thus, some standard deviations will appear here as negative. This processing was performed to make the data more suitable for machine learning.
+
 3.                     tBodyAcc.mean...X
 4.                     tBodyAcc.mean...Y
 5.                     tBodyAcc.mean...Z
