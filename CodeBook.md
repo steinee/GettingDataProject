@@ -73,18 +73,18 @@ Feature Descriptions:
 =====================
 In R, column 1 is integer, column 2 is a factor. All others are numerics.
 
+All of the below numeric featuers are either means or stndard deviations as indicated by the name. Importantly, note that the input data for this project was normalized to the range -1 to 1. That is, all the variables were altered by subtracting thei means to center them around zero and then divided by the range of the data to normalize the range to -1 to 1. Thus, some standard deviations will appear here as negative. This processing was performed to make the data more suitable for machine learning.
 
-1                              Activity One of 6 possible values:
+
+
+1.                              Activity One of 6 possible values:
 *                                                  WALKING
 *                                                  WALKING_UPSTAIRS
 *                                                  WALKING_DOWNSTAIRS
 *                                                  SITTING
 *                                                  STANDING
 *                                                  LAYING
-2                               Subject Integer from 1 to 30 identifying a test subject
-
-All of the below featuers are either means or stndard deviations as indicated by the name. Importantly, note that the input data for this project was normalized to the range -1 to 1. That is, all the variables were altered by subtracting thei means to center them around zero and then divided by the range of the data to normalize the range to -1 to 1. Thus, some standard deviations will appear here as negative. This processing was performed to make the data more suitable for machine learning.
-
+2.                               Subject Integer from 1 to 30 identifying a test subject
 3.                     tBodyAcc.mean...X
 4.                     tBodyAcc.mean...Y
 5.                     tBodyAcc.mean...Z
@@ -93,88 +93,88 @@ All of the below featuers are either means or stndard deviations as indicated by
 8.                      tBodyAcc.std...Z
 9.                  tGravityAcc.mean...X
 10.                 tGravityAcc.mean...Y
-11                 tGravityAcc.mean...Z
-12                  tGravityAcc.std...X
-13                  tGravityAcc.std...Y
-14                  tGravityAcc.std...Z
-15                tBodyAccJerk.mean...X
-16                tBodyAccJerk.mean...Y
-17                tBodyAccJerk.mean...Z
-18                 tBodyAccJerk.std...X
-19                 tBodyAccJerk.std...Y
-20                 tBodyAccJerk.std...Z
-21                   tBodyGyro.mean...X
-22                   tBodyGyro.mean...Y
-23                   tBodyGyro.mean...Z
-24                    tBodyGyro.std...X
-25                    tBodyGyro.std...Y
-26                    tBodyGyro.std...Z
-27               tBodyGyroJerk.mean...X
-28               tBodyGyroJerk.mean...Y
-29               tBodyGyroJerk.mean...Z
-30                tBodyGyroJerk.std...X
-31                tBodyGyroJerk.std...Y
-32                tBodyGyroJerk.std...Z
-33                   tBodyAccMag.mean..
-34                    tBodyAccMag.std..
-35                tGravityAccMag.mean..
-36                 tGravityAccMag.std..
-37               tBodyAccJerkMag.mean..
-38                tBodyAccJerkMag.std..
-39                  tBodyGyroMag.mean..
-40                   tBodyGyroMag.std..
-41              tBodyGyroJerkMag.mean..
-42               tBodyGyroJerkMag.std..
-43                    fBodyAcc.mean...X
-44                    fBodyAcc.mean...Y
-45                    fBodyAcc.mean...Z
-46                     fBodyAcc.std...X
-47                     fBodyAcc.std...Y
-48                     fBodyAcc.std...Z
-49                fBodyAcc.meanFreq...X
-50                fBodyAcc.meanFreq...Y
-51                fBodyAcc.meanFreq...Z
-52                fBodyAccJerk.mean...X
-53                fBodyAccJerk.mean...Y
-54                fBodyAccJerk.mean...Z
-55                 fBodyAccJerk.std...X
-56                 fBodyAccJerk.std...Y
-57                 fBodyAccJerk.std...Z
-58            fBodyAccJerk.meanFreq...X
-59            fBodyAccJerk.meanFreq...Y
-60            fBodyAccJerk.meanFreq...Z
-61                   fBodyGyro.mean...X
-62                   fBodyGyro.mean...Y
-63                   fBodyGyro.mean...Z
-64                    fBodyGyro.std...X
-65                    fBodyGyro.std...Y
-66                    fBodyGyro.std...Z
-67               fBodyGyro.meanFreq...X
-68               fBodyGyro.meanFreq...Y
-69               fBodyGyro.meanFreq...Z
-70                   fBodyAccMag.mean..
-71               fBodyAccMag.meanFreq..
-72                    fBodyAccMag.std..
-73             fBodyAccMag.meanFreq...1
-74           fBodyBodyAccJerkMag.mean..
-75       fBodyBodyAccJerkMag.meanFreq..
-76            fBodyBodyAccJerkMag.std..
-77     fBodyBodyAccJerkMag.meanFreq...1
-78              fBodyBodyGyroMag.mean..
-79          fBodyBodyGyroMag.meanFreq..
-80               fBodyBodyGyroMag.std..
-81        fBodyBodyGyroMag.meanFreq...1
-82          fBodyBodyGyroJerkMag.mean..
-83      fBodyBodyGyroJerkMag.meanFreq..
-84           fBodyBodyGyroJerkMag.std..
-85    fBodyBodyGyroJerkMag.meanFreq...1
-86          angle.tBodyAccMean.gravity.
-87 angle.tBodyAccJerkMean..gravityMean.
-88     angle.tBodyGyroMean.gravityMean.
-89 angle.tBodyGyroJerkMean.gravityMean.
-90                 angle.X.gravityMean.
-91                 angle.Y.gravityMean.
-92                 angle.Z.gravityMean.
+11.                 tGravityAcc.mean...Z
+12.                  tGravityAcc.std...X
+13.                  tGravityAcc.std...Y
+14.                  tGravityAcc.std...Z
+15.                tBodyAccJerk.mean...X
+16.                tBodyAccJerk.mean...Y
+17.                tBodyAccJerk.mean...Z
+18.                 tBodyAccJerk.std...X
+19.                 tBodyAccJerk.std...Y
+20.                 tBodyAccJerk.std...Z
+21.                   tBodyGyro.mean...X
+22.                   tBodyGyro.mean...Y
+23.                   tBodyGyro.mean...Z
+24.                    tBodyGyro.std...X
+25.                    tBodyGyro.std...Y
+26.                    tBodyGyro.std...Z
+27.               tBodyGyroJerk.mean...X
+28.               tBodyGyroJerk.mean...Y
+29.               tBodyGyroJerk.mean...Z
+30.                tBodyGyroJerk.std...X
+31.                tBodyGyroJerk.std...Y
+32.                tBodyGyroJerk.std...Z
+33.                   tBodyAccMag.mean..
+34.                    tBodyAccMag.std..
+35.                tGravityAccMag.mean..
+36.                 tGravityAccMag.std..
+37.               tBodyAccJerkMag.mean..
+38.                tBodyAccJerkMag.std..
+39.                  tBodyGyroMag.mean..
+40.                   tBodyGyroMag.std..
+41.              tBodyGyroJerkMag.mean..
+42.               tBodyGyroJerkMag.std..
+43.                    fBodyAcc.mean...X
+44.                    fBodyAcc.mean...Y
+45.                    fBodyAcc.mean...Z
+46.                     fBodyAcc.std...X
+47.                     fBodyAcc.std...Y
+48.                     fBodyAcc.std...Z
+49.                fBodyAcc.meanFreq...X
+50.                fBodyAcc.meanFreq...Y
+51.                fBodyAcc.meanFreq...Z
+52.                fBodyAccJerk.mean...X
+53.                fBodyAccJerk.mean...Y
+54.                fBodyAccJerk.mean...Z
+55.                 fBodyAccJerk.std...X
+56.                 fBodyAccJerk.std...Y
+57.                 fBodyAccJerk.std...Z
+58.            fBodyAccJerk.meanFreq...X
+59.            fBodyAccJerk.meanFreq...Y
+60.            fBodyAccJerk.meanFreq...Z
+61.                   fBodyGyro.mean...X
+62.                   fBodyGyro.mean...Y
+63.                   fBodyGyro.mean...Z
+64.                    fBodyGyro.std...X
+65.                    fBodyGyro.std...Y
+66.                    fBodyGyro.std...Z
+67.               fBodyGyro.meanFreq...X
+68.               fBodyGyro.meanFreq...Y
+69.               fBodyGyro.meanFreq...Z
+70.                   fBodyAccMag.mean..
+71.               fBodyAccMag.meanFreq..
+72.                    fBodyAccMag.std..
+73.             fBodyAccMag.meanFreq...1
+74.           fBodyBodyAccJerkMag.mean..
+75.       fBodyBodyAccJerkMag.meanFreq..
+76.            fBodyBodyAccJerkMag.std..
+77.     fBodyBodyAccJerkMag.meanFreq...1
+78.              fBodyBodyGyroMag.mean..
+79.          fBodyBodyGyroMag.meanFreq..
+80.               fBodyBodyGyroMag.std..
+81.        fBodyBodyGyroMag.meanFreq...1
+82.          fBodyBodyGyroJerkMag.mean..
+83.      fBodyBodyGyroJerkMag.meanFreq..
+84.           fBodyBodyGyroJerkMag.std..
+85.    fBodyBodyGyroJerkMag.meanFreq...1
+86.          angle.tBodyAccMean.gravity.
+87. angle.tBodyAccJerkMean..gravityMean.
+88.     angle.tBodyGyroMean.gravityMean.
+89. angle.tBodyGyroJerkMean.gravityMean.
+90.                 angle.X.gravityMean.
+91.                 angle.Y.gravityMean.
+92.                 angle.Z.gravityMean.
 
 Original Feature Selection: 
 ===========================
