@@ -84,14 +84,14 @@ In R, column 1 is integer, column 2 is a factor. All others are numerics.
 2                               Subject Integer from 1 to 30 identifying a test subject
 
 All of the below featuers are either means or stndard deviations as indicated by the name. Importantly, note that the input data for this project was normalized to the range -1 to 1. That is, all the variables were altered by subtracting thei means to center them around zero and then divided by the range of the data to normalize the range to -1 to 1. Thus, some standard deviations will appear here as negative. This processing was performed to make the data more suitable for machine learning.
-3                     tBodyAcc.mean...X
-4                     tBodyAcc.mean...Y
-5                     tBodyAcc.mean...Z
-6                      tBodyAcc.std...X
-7                      tBodyAcc.std...Y
-8                      tBodyAcc.std...Z
-9                  tGravityAcc.mean...X
-10                 tGravityAcc.mean...Y
+3.                     tBodyAcc.mean...X
+4.                     tBodyAcc.mean...Y
+5.                     tBodyAcc.mean...Z
+6.                      tBodyAcc.std...X
+7.                      tBodyAcc.std...Y
+8.                      tBodyAcc.std...Z
+9.                  tGravityAcc.mean...X
+10.                 tGravityAcc.mean...Y
 11                 tGravityAcc.mean...Z
 12                  tGravityAcc.std...X
 13                  tGravityAcc.std...Y
