@@ -77,8 +77,8 @@ All of the below numeric featuers are either means or stndard deviations as indi
 
 
 
-1. Activity One of 6 possible values: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS,SITTING,STANDING,LAYING
-2. Subject Integer from 1 to 30 identifying a test subject
+1. Activity:  One of 6 possible values: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS,SITTING,STANDING,LAYING
+2. Subject:   Integer from 1 to 30 identifying a test subject
 3.                     tBodyAcc.mean...X
 4.                     tBodyAcc.mean...Y
 5.                     tBodyAcc.mean...Z
